@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:onClick="launchSecondActivity"
+    tools:context=".MainActivity"
+    android:layout_alignParentEnd="true"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="launchSecondActivity"
+        android:text="@string/send" />
+
+    <EditText
+        android:id="@+id/Text_main"
+        android:layout_toLeftOf="@id/button_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:hint="@string/enter_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:layout_toStartOf="@id/button_main" />
+
+    <TextView
+        android:id="@+id/textHeader_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Reply Received" />
+
+    <TextView
+        android:id="@+id/textMessage_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHeader_reply"
+         />
+</RelativeLayout>
